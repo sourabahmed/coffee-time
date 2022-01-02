@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 *{
+    padding: 0px;
+    margin:0px;
+}
+
+/* section - 1 */
+.section-1{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../images/home-banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-1 h1{
     font-family: 'Rancho', cursive;
+    font-size: 4em;
+    color: white;
+}
+
+.section-1 h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    color: white;
+}
+
+.home-banner-btn{
+    font-family: 'Rancho', cursive;
+    background-color: white;
+    border: 3px solid white;
+    font-size: 1.8em;
+    color: #331a15;
+}
+.home-banner-btn:hover{
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
 }
