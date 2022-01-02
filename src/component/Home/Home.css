@@ -82,19 +82,25 @@
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
 }
+.about-img-container{
+    position: relative;
+}
 .about-img-1{
     border-radius: 5%;
-    position: relative;
-    top:-40%;
-    left: 25%;
+    position: absolute;
     z-index: 1;
 }
 .about-img-2{
     border-radius: 5%;
-    position: relative;
-    top:35%;
-    left: -20%;
+    position: absolute;
+    top:50%;
+    left: 15%;
     z-index: 2;
+}
+
+/* section-4 */
+.section-4{
+    margin-top: 15%;
 }
 
 @media only screen and (max-width:770px){
@@ -107,15 +113,13 @@
     .banner-detail{
         width: 100%;
     }
+}
+@media only screen and (max-width:1020px){
     .about-img-1{
-        top:0%;
-        left: 0%;
-        margin: 5% 0;
+        position: relative;
     }
     .about-img-2{
-        top:0%;
-        left:0%;
-        margin-bottom: 5% 0;
+        display: none;
     }
 }
 

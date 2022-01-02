@@ -10,6 +10,8 @@ import about_1 from '../../images/aboutUs1.jpg';
 import about_2 from '../../images/aboutUs2.jpg';
 import about_3 from '../../images/aboutUs3.png';
 import about_4 from '../../images/aboutUs4.png';
+import about_5 from '../../images/5.jpg';
+import about_6 from '../../images/6.png';
 
 const flashAnimation = keyframes`${flash}`;
 const FlashDiv = styled.div`
@@ -76,7 +78,7 @@ const Home = () => {
             <div className="section-3 my-5">
                 <div className="py-3 container">
                     <div className="row">
-                        <div className="col-12 col-lg-6 text-start pe-5">
+                        <div className="col-12 col-lg-4 text-start pe-5">
                             <p>About Us</p>
                             <h1>There is all about Coffee house</h1>
                             <p>Coffee Time is serving for you from the previous 10 years. We care for you, for your test with our hospitality. You will have a great time with us. </p>
@@ -84,7 +86,7 @@ const Home = () => {
                                 <div className="col-12 col-md-2">
                                     <img src={about_3} alt="" />
                                 </div>
-                                <div className="col-12 col-md-10 w-75">
+                                <div className="col-12 col-md-10">
                                     <h2>Best Facility</h2>
                                     <p>Have your coffee with full refreshment, enjoy the moment.</p>
                                 </div>
@@ -93,19 +95,21 @@ const Home = () => {
                                 <div className="col-12 col-md-2">
                                     <img src={about_4} alt="" />
                                 </div>
-                                <div className="col-12 col-md-10 w-75">
+                                <div className="col-12 col-md-10">
                                     <h2>Resoanable Price</h2>
                                     <p>You will get in a resonable price. Your happiness add a value for us.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-8 about-img-container">
                             <img className="about-img-2 img-fluid" src={about_2} alt="" />
                             <img className="about-img-1 img-fluid" src={about_1} alt="" />
                         </div>
                     </div>
                 </div>
             </div>
+
+
 
         </div>
     )
