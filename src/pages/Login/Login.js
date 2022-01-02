@@ -3,17 +3,17 @@ import './Login.css';
 import { useForm } from "react-hook-form";
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Header from '../Home/Header/Header';
-// import useFirebase from '../../hooks/useFirebase';
+import useFirebase from '../../hooks/useFirebase';
 
 
 const Login = () => {
-    // const {logInUser} = useFirebase();
+    const {logInUser} = useFirebase();
 
-    // const location = useLocation();
-    // const navigate = useNavigate();
+    const location = useLocation();
+    const navigate = useNavigate();
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        // logInUser(data.email, data.password, location, navigate)
+        logInUser(data.email, data.password, location, navigate)
         console.log(data);
     }
     return (

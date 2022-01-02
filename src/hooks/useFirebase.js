@@ -21,7 +21,7 @@ const useFirebase = () => {
                 const newUser = { email, displayName: name };
                 setUser(newUser);
                 // save user information
-                saveUser(email, name);
+                // saveUser(email, name);
                 // send name to firebase after creation
                 updateProfile(auth.currentUser, {
                     displayName: name
@@ -79,11 +79,11 @@ const useFirebase = () => {
 
 
     //
-    useEffect(() => {
-        fetch(`https://shielded-ravine-12635.herokuapp.com/users/${user?.email}`)
-        .then(res => res.json())
-        .then(data => setAdmin(data.admin))
-    },[user?.email])
+    // useEffect(() => {
+    //     fetch(`http://localhost:5000/users/${user?.email}`)
+    //     .then(res => res.json())
+    //     .then(data => setAdmin(data.admin))
+    // },[user?.email])
 
 
     const logOut = () => {
@@ -96,17 +96,17 @@ const useFirebase = () => {
 
     // save user to databse
 
-    const saveUser = (email, displayName) => {
-        const user = {email, displayName};
-        fetch('https://shielded-ravine-12635.herokuapp.com/users', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(user)
-        })
-        .then()
-    }
+    // const saveUser = (email, displayName) => {
+    //     const user = {email, displayName};
+    //     fetch('http://localhost:5000/users', {
+    //         method: 'POST',
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify(user)
+    //     })
+    //     .then()
+    // }
 
     return {
         user,

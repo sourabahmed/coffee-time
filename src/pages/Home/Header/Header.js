@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { a, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 
@@ -22,13 +22,19 @@ const Header = () => {
                     }>
                     <ul>
                         <li>
-                            <a href="/">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="about">about</a>
+                            <Link to="/about">about</Link>
                         </li>
                         <li>
                             <a href="services">services</a>
+                        </li>
+                        <li>
+                            <a href="services">Contacts</a>
+                        </li>
+                        <li>
+                            <a href="dashboard">Dashboard</a>
                         </li>
                         <li>
                             <Link to="/login">Login</Link>
@@ -40,22 +46,7 @@ const Header = () => {
                 <div className="social-media">
                     <ul className="social-media-desktop">
                         <li>
-                            <a
-                                href="/"
-                                target="_blank">
-                                <i className="fab fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="/"
-                                target="_blank">
-                                <i className="fab fa-instagram-square"></i>
-                            </a>
-                        </li>
-                       
-                        <li>
-                            <Link to="/login"><button className="btn btn-danger ms-5">Login</button></Link>
+                           <a href="/">User</a>
                         </li>
                     </ul>
 
