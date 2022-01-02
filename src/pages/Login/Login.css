@@ -35,8 +35,9 @@
     height: 50px;
     background-color: #e91a2fe8;
     color: white;
-    font-weight: 400;
+    font-weight: bolder;
     border: none;
+    font-size: 20px;
 }
 
 .success-data {

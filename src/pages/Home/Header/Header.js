@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { a } from "react-router-dom";
+import { a, Link } from "react-router-dom";
 import "./Header.css";
 
 
@@ -31,7 +31,7 @@ const Header = () => {
                             <a href="services">services</a>
                         </li>
                         <li>
-                            <a href="contact">contact</a>
+                            <Link to="/login">Login</Link>
                         </li>
                     </ul>
                 </div>
@@ -53,12 +53,9 @@ const Header = () => {
                                 <i className="fab fa-instagram-square"></i>
                             </a>
                         </li>
+                       
                         <li>
-                            <a
-                                href="https://github.com/sourabahmed/my-react-library"
-                                target="_blank">
-                                <i class="fab fa-github-square"></i>
-                            </a>
+                            <Link to="/login"><button className="btn btn-danger ms-5">Login</button></Link>
                         </li>
                     </ul>
 
