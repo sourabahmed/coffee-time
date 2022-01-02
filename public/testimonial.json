@@ -1,0 +1,28 @@
+[
+    
+    {
+        "userId": 1,
+        "img": "https://i.ibb.co/wpkQCby/wrpf0n-team-b1-102s02s00000000000001o.jpg",
+        "id": 1,
+        "name": "John Deo",
+        "designation": "Founder",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+    {
+        "userId": 1,
+        "img": "https://i.ibb.co/nkgVnVK/15w7gjk-tyler-hardy-102s02s00000000000001o.jpg",
+        "id": 1,
+        "name": "Sumi Roy",
+        "designation": "Manager",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+    {
+        "userId": 3,
+        "img": "https://i.ibb.co/P1ZPpWT/vzqxf1-2-102s03002s02s00000401o.jpg",
+        "id": 3,
+        "name": "David Lee",
+        "designation": "Designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      }
+    
+]
