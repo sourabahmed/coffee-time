@@ -3,19 +3,20 @@ import './Signin.css';
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Header from '../Home/Header/Header';
+import useFirebase from '../../hooks/useFirebase';
 
 
 const Signin = () => {
-    // const {registerUser} = useAuth();
+    const {registerUser} = useFirebase();
 
-    // const location = useLocation();
-    // const navigate = useNavigate();
+    const location = useLocation();
+    const navigate = useNavigate();
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        // if (data.password !== data.password2) {
-        //     alert('passwords does not matched')
-        // }
-        // registerUser(data.name, data.email, data.password, navigate, location)
+        if (data.password !== data.password2) {
+            alert('passwords does not matched')
+        }
+        registerUser(data.name, data.email, data.password, navigate, location)
         console.log(data);
     };
     return (

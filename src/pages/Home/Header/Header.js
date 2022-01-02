@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import useFirebase from "../../../hooks/useFirebase";
 import "./Header.css";
 
 
 const Header = () => {
+
+    const { user, logOut } = useFirebase();
+
     const [showMediaIcons, setShowMediaIcons] = useState(false);
     return (
         <>
@@ -36,9 +40,13 @@ const Header = () => {
                         <li>
                             <a href="dashboard">Dashboard</a>
                         </li>
-                        <li>
-                            <Link to="/login">Login</Link>
-                        </li>
+                        {
+                            user.email ? <button onClick={logOut} className="btn btn-danger">Logout</button>:
+                                        <li>
+                                            <Link to="/login">Login</Link>
+                                        </li>
+                                         
+                        }
                     </ul>
                 </div>
 
@@ -46,7 +54,7 @@ const Header = () => {
                 <div className="social-media">
                     <ul className="social-media-desktop">
                         <li>
-                           <a href="/">User</a>
+                            <a href="/">{user.displayName}</a>
                         </li>
                     </ul>
 
