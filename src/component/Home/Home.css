@@ -4,18 +4,32 @@
 *{
     padding: 0px;
     margin:0px;
+    word-wrap: break-word;
 }
 
 /* section - 1 */
 .section-1{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(../../images/home-banner.jpg);
     background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
-.section-1 h1{
+.banner-detail{
+    width: 50%;
+}
+
+.special1{
+    font-family: 'Rancho', cursive;
+    font-size: 4em;
+    color: white;
+    display: block;
+}
+.special2{
     font-family: 'Rancho', cursive;
     font-size: 4em;
     color: white;
@@ -39,4 +53,39 @@
     color: white;
     background-color: transparent;
     border: 3px solid white;
+}
+
+/* section - 2 */
+.section-2{
+    background-color: #eceae3;
+    display: flex;
+    align-items: center;
+}
+.section-2 h2{
+    color: #331a15;
+    text-align: left;
+    font-family: 'Rancho', cursive;
+    text-shadow:  0px 0px 5px #000;
+}
+.section-2 p{
+    text-align: left;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width:770px){
+    .special1{
+        display: none;
+    }
+    .special2{
+        display: block;
+    }
+    .banner-detail{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:771px){
+    .special2{
+        display: none;
+    }
 }
