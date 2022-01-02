@@ -41,9 +41,9 @@ const Header = () => {
                             <a href="dashboard">Dashboard</a>
                         </li>
                         {
-                            user.email ? <button onClick={logOut} className="btn btn-danger">Logout</button>:
+                            user.email ? <button onClick={logOut} className="btn btn-danger fs-4 ">Logout</button>:
                                         <li>
-                                            <Link to="/login">Login</Link>
+                                            <button className="btn btn-danger"><Link className="text-light fs-4" to="/login">Login</Link></button>
                                         </li>
                                          
                         }

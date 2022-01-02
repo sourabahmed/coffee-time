@@ -11,6 +11,7 @@ import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login';
 import Signin from './pages/Signin/Signin';
 import About from './pages/Home/About/About';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -23,7 +24,16 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="signin" element={<Signin />} />
-          <Route path="about" element={<About />} />
+          {/* <Route path="about" element={<About />} /> */}
+
+          <Route
+              path="about"
+              element={
+                <PrivateRoute>
+                  <About />
+                </PrivateRoute>
+              }
+          />
 
         </Routes>
       </BrowserRouter>
