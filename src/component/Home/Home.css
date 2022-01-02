@@ -68,8 +68,33 @@
     text-shadow:  0px 0px 5px #000;
 }
 .section-2 p{
+    font-family: 'Raleway', sans-serif;
     text-align: left;
     font-size: 1.2em;
+}
+
+/* section-3 */
+.section-3 h1,h2{
+    color: #331a15;
+    font-family: 'Rancho', cursive;
+}
+.section-3 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+.about-img-1{
+    border-radius: 5%;
+    position: relative;
+    top:-40%;
+    left: 25%;
+    z-index: 1;
+}
+.about-img-2{
+    border-radius: 5%;
+    position: relative;
+    top:35%;
+    left: -20%;
+    z-index: 2;
 }
 
 @media only screen and (max-width:770px){
@@ -81,6 +106,16 @@
     }
     .banner-detail{
         width: 100%;
+    }
+    .about-img-1{
+        top:0%;
+        left: 0%;
+        margin: 5% 0;
+    }
+    .about-img-2{
+        top:0%;
+        left:0%;
+        margin-bottom: 5% 0;
     }
 }
 
