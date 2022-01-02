@@ -100,8 +100,31 @@
 
 /* section-4 */
 .section-4{
-    margin-top: 15%;
+    padding-left: 0;
 }
+.about-img-3{
+    border-top-right-radius: 10%;
+}
+.section-4 h1{
+    color: #331a15;
+    font-size: 4em;
+    font-family: 'Rancho', cursive;
+    text-shadow:  0px 0px 5px #000;
+}
+.about-bottom{
+    position: relative;
+}
+.about-bottom .about-img-4{
+    position: absolute;
+    background-color: white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    padding: 15% 15% 3% 15%;
+    width: 60%;
+    top: 32%;
+    right: -20%;
+}
+
 
 @media only screen and (max-width:770px){
     .special1{
@@ -112,6 +135,14 @@
     }
     .banner-detail{
         width: 100%;
+    }
+    .section-4 h1{
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width:600px){
+    .section-4 h1{
+        font-size: 1.4em;
     }
 }
 @media only screen and (max-width:1020px){

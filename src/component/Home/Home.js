@@ -109,7 +109,18 @@ const Home = () => {
                 </div>
             </div>
 
-
+            <div className="section-4">
+                <div className="d-flex justify-content-between">
+                    <div className="about-bottom">
+                        <img className="about-img-3 img-fluid" src={about_5} alt="" />
+                        <img className="about-img-4 img-fluid" src={about_6} alt="" />
+                        <h2 className="text-end mt-3">Fine Quality & Ecological</h2>
+                    </div>
+                    <div className="w-50 ms-3 px-5 d-flex align-items-center">
+                        <h1>Let's enjoy the day together! Spend a quality time with Coffee Time...</h1>
+                    </div>
+                </div>
+            </div>
 
         </div>
     )
