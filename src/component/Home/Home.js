@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Row } from "react-bootstrap";
 import './Home.css';
 import styled, { keyframes } from 'styled-components';
 import { pulse, flash } from 'react-animations';
@@ -12,6 +13,7 @@ import about_3 from '../../images/aboutUs3.png';
 import about_4 from '../../images/aboutUs4.png';
 import about_5 from '../../images/5.jpg';
 import about_6 from '../../images/6.png';
+import Gallery from "../Gallery/Gallery";
 
 const flashAnimation = keyframes`${flash}`;
 const FlashDiv = styled.div`
@@ -24,6 +26,14 @@ const PulseDiv = styled.div`
 `;
 
 const Home = () => {
+
+    const [photos, setPhotos] = useState([])
+    useEffect(() => {
+        fetch('photoGallery.json')
+            .then(res => res.json())
+            .then(data => setPhotos(data));
+    }, [])
+
     return (
         <div>
 
@@ -109,7 +119,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="section-4">
+            <div className="section-4 mb-5">
                 <div className="d-flex justify-content-between">
                     <div className="about-bottom">
                         <img className="about-img-3 img-fluid" src={about_5} alt="" />
@@ -119,6 +129,21 @@ const Home = () => {
                     <div className="w-50 ms-3 px-5 d-flex align-items-center">
                         <h1>Let's enjoy the day together! Spend a quality time with Coffee Time...</h1>
                     </div>
+                </div>
+            </div>
+
+            <div className="section-5">
+                <p>Our Special Menu</p>
+                <h1>Photo Gallery</h1>
+                <div className="gallery-container container-fluid">
+                    <Row xs={1} md={3}>
+                        {
+                            photos.map(gallery => <Gallery
+                                key={gallery.id}
+                                gallery={gallery}
+                            ></Gallery>)
+                        }
+                    </Row>
                 </div>
             </div>
 
