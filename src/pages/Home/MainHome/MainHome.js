@@ -16,6 +16,7 @@ import about_6 from '../../../images/6.png';
 import Gallery from "../Gallery/Gallery";
 import Reviews from "../Reviews/Reviews";
 import InstaPic from "../InstaPic/InstaPic";
+import Products from "../../Home/Products/Products"
 
 const flashAnimation = keyframes`${flash}`;
 const FlashDiv = styled.div`
@@ -161,7 +162,7 @@ const MainHome = () => {
                 <h1>What Our Clints Says</h1>
                 <Reviews></Reviews>
             </div>
-
+              <Products></Products>
             <div className="container-fluid section-8 mb-5">
                 <p>Follow Us Now</p>
                 <h1>Follow on Instagram</h1>

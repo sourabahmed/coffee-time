@@ -1,0 +1,17 @@
+
+.products-section{
+    background-color: rgb(214, 220, 221);
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px;
+    padding: 25px;
+}
+@media only screen and (max-width:668px) {
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
