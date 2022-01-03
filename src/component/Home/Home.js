@@ -174,7 +174,6 @@ const Home = () => {
                     }
                 </Row>
             </div>
-
         </div>
     )
 }
