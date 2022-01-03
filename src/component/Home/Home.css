@@ -133,13 +133,13 @@
     background-image: url(../../images/gallery-banner1.png);
     background-repeat: no-repeat;
 }
-.section-5 h1{
+.section-5 h1, .section-6 h1{
     color: #331a15;
     font-size: 4em;
     font-family: 'Rancho', cursive;
     text-shadow:  0px 0px 5px #000;
 }
-.section-5 p{
+.section-5 p, .section-6 p{
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
 }

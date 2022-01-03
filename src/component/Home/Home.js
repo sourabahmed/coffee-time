@@ -14,6 +14,7 @@ import about_4 from '../../images/aboutUs4.png';
 import about_5 from '../../images/5.jpg';
 import about_6 from '../../images/6.png';
 import Gallery from "../Gallery/Gallery";
+import Reviews from "../Reviews/Reviews";
 
 const flashAnimation = keyframes`${flash}`;
 const FlashDiv = styled.div`
@@ -145,6 +146,12 @@ const Home = () => {
                         }
                     </Row>
                 </div>
+            </div>
+
+            <div className="section-6 my-5 py-5">
+                <p>Testimonial</p>
+                <h1>What Our Clints Says</h1>
+                <Reviews></Reviews>
             </div>
 
         </div>
