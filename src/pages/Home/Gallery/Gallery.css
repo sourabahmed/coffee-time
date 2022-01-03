@@ -1,0 +1,20 @@
+
+.gallery{
+    background-color: white;
+    border-radius: 5%;
+    margin: 1%;
+}
+.gallery h2{
+    color: #331a15;
+    font-family: 'Rancho', cursive;
+    text-shadow:  0px 0px 5px #000;
+}
+.gallery p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    margin: 0 auto;
+    width: 80%;
+}
+.gallery img{
+    border-radius: 5%;
+}

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+    word-wrap: break-word;
+}
+
+/* section - 1 */
+.section-1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../../images/home-banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.banner-detail{
+    width: 50%;
+}
+
+.special1{
+    font-family: 'Rancho', cursive;
+    font-size: 4em;
+    color: white;
+    display: block;
+}
+.special2{
+    font-family: 'Rancho', cursive;
+    font-size: 4em;
+    color: white;
+}
+
+.section-1 h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    color: white;
+}
+
+.home-banner-btn{
+    font-family: 'Rancho', cursive;
+    background-color: white;
+    border: 3px solid white;
+    font-size: 1.8em;
+    color: #331a15;
+}
+.home-banner-btn:hover{
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+/* section - 2 */
+.section-2{
+    background-color: #eceae3;
+    display: flex;
+    align-items: center;
+}
+.section-2 h2{
+    color: #331a15;
+    text-align: left;
+    font-family: 'Rancho', cursive;
+    text-shadow:  0px 0px 5px #000;
+}
+.section-2 p{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+/* section-3 */
+.section-3 h1,h2{
+    color: #331a15;
+    font-family: 'Rancho', cursive;
+    margin-bottom: 50px;
+}
+.section-3 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+.about-img-container{
+    position: relative;
+}
+.about-img-1{
+    border-radius: 5%;
+    position: absolute;
+    z-index: 1;
+}
+.about-img-2{
+    border-radius: 5%;
+    position: absolute;
+    top:50%;
+    left: 15%;
+    z-index: 2;
+}
+
+/* section-4 */
+.section-4{
+    padding-left: 0;
+    margin-top: 200px;
+}
+.about-img-3{
+    border-top-right-radius: 10%;
+}
+.section-4 h1{
+    color: #331a15;
+    font-size: 4em;
+    font-family: 'Rancho', cursive;
+    text-shadow:  0px 0px 5px #000;
+}
+.about-bottom{
+    position: relative;
+}
+.about-bottom .about-img-4{
+    position: absolute;
+    background-color: white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    padding: 15% 15% 3% 15%;
+    width: 60%;
+    top: 32%;
+    right: -20%;
+}
+
+/* section-5 */
+.section-5{
+    margin: 5% 0;
+    padding: 5% 0;
+    background-color: #eceae3;
+    background-image: url(../../../images/gallery-banner1.png);
+    background-repeat: no-repeat;
+}
+.section-5 h1, .section-6 h1, .section-8 h1{
+    color: #331a15;
+    font-size: 4em;
+    font-family: 'Rancho', cursive;
+    text-shadow:  0px 0px 5px #000;
+}
+.section-5 p, .section-6 p, .section-8 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+.gallery-container{
+    background-image: url(../../../images/gallery-banner2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+@media only screen and (max-width:770px){
+    .special1{
+        display: none;
+    }
+    .special2{
+        display: block;
+    }
+    .banner-detail{
+        width: 100%;
+    }
+    .section-4 h1{
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width:600px){
+    .section-4 h1{
+        font-size: 1.4em;
+    }
+}
+@media only screen and (max-width:1020px){
+    .about-img-1{
+        position: relative;
+    }
+    .about-img-2{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:771px){
+    .special2{
+        display: none;
+    }
+}

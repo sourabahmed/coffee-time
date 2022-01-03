@@ -1,0 +1,31 @@
+.footer h1{
+    color: #331a15;
+    font-size: 3.5em;
+    text-align: left;
+    font-family: 'Rancho', cursive;
+    text-shadow:  0px 0px 5px #000;
+}
+.footer p{
+    font-family: 'Raleway', sans-serif;
+    color: #331a15;
+    text-align: left;
+    font-size: 1.2em;
+}
+.footer .links .link a{
+    color: #331a15;
+}
+.btn2{
+    font-family: 'Rancho', cursive;
+    background-color: #d2b48c;
+    border: 3px solid #331a15;
+    font-size: 1.8em;
+    color: #331a15;
+    padding: 0 2%;
+}
+.btn2:hover{
+    background-color: #eceae3;    
+}
+.copyright{
+    font-size: 1.3em;
+    font-family: 'Rancho', cursive;
+}
