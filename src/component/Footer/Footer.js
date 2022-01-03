@@ -4,11 +4,25 @@ import logo from '../../images/logo1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faAddressBook, faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import emailjs from 'emailjs-com';
+import { Form } from "react-bootstrap";
 
 const Footer = () => {
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_re586ir', 'my_template', e.target, 'user_4UooSEKu8rQ9ersXezf6h')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        e.target.reset()
+    };
     return (
         <div>
-            <div className="footer d-flex flex-column align-items-center py-5" style={{ backgroundColor: "#eceae3" }}>
+            <div className="footer d-flex flex-column align-items-center pt-5" style={{ backgroundColor: "#eceae3" }}>
                 <div className="container">
                     <div className="row py-5">
 
@@ -36,6 +50,30 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="w-50 mx-auto mb-5">
+                        <h1 className="mt-3 mb-2 text-center" style={{ color: "#331a15", fontWeight: "bold", textShadow: "none" }}>Connect with Us</h1>
+                        <Form onSubmit={sendEmail}>
+                            <div className="pt-4 mx-auto">
+                                <div className="mx-auto form-group">
+                                    <input type="text" className="form-control" placeholder="Name" name="name" />
+                                </div>
+                                <div className="pt-2 mx-auto form-group">
+                                    <input type="email" className="form-control" placeholder="Your email" name="email" />
+                                </div>
+                                <div className="pt-2 mx-auto form-group">
+                                    <input type="text" className="form-control" placeholder="Subject" name="subject" />
+                                </div>
+                                <div className="pt-2 mx-auto form-group">
+                                    <textarea className="form-control" cols="30" rows="5" placeholder="Message" name="message" />
+                                </div>
+                                <div className="pt-3 mx-auto form-group">
+                                    <input type="submit" className="btn2 rounded-pill mb-2" value="Send Message" />
+                                </div>
+
+                            </div>
+                        </Form>
                     </div>
                 </div>
             </div>

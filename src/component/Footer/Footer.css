@@ -14,6 +14,17 @@
 .footer .links .link a{
     color: #331a15;
 }
+.btn2{
+    font-family: 'Rancho', cursive;
+    background-color: #d2b48c;
+    border: 3px solid #331a15;
+    font-size: 1.8em;
+    color: #331a15;
+    padding: 0 2%;
+}
+.btn2:hover{
+    background-color: #eceae3;    
+}
 .copyright{
     font-size: 1.3em;
     font-family: 'Rancho', cursive;
