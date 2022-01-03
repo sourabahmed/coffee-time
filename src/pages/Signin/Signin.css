@@ -19,7 +19,8 @@
 .forms-inputs input {
     height: 50px;
     width: 100%;
-    border: 2px solid #f0baba
+    border: 2px solid #f0baba;
+    font-size: 20px;
 }
 
 .forms-inputs input:focus {
