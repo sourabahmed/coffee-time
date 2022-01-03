@@ -41,7 +41,7 @@ const Footer = () => {
                         </div>
 
                         <div className="col-12 col-md-6">
-                            <h1>Get in Touch</h1>
+                            <h1 className="pt-4">Get in Touch</h1>
                             <div className="links d-flex justify-content-start mt-4 ms-5">
                                 <div className="link">
                                     <p><FontAwesomeIcon icon={faPhone} size="2x" />&emsp;+8801533333333</p>
