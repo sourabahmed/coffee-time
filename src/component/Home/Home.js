@@ -15,6 +15,7 @@ import about_5 from '../../images/5.jpg';
 import about_6 from '../../images/6.png';
 import Gallery from "../Gallery/Gallery";
 import Reviews from "../Reviews/Reviews";
+import InstaPic from "../InstaPic/InstaPic";
 
 const flashAnimation = keyframes`${flash}`;
 const FlashDiv = styled.div`
@@ -33,6 +34,13 @@ const Home = () => {
         fetch('photoGallery.json')
             .then(res => res.json())
             .then(data => setPhotos(data));
+    }, [])
+
+    const [insta, setInsta] = useState([])
+    useEffect(() => {
+        fetch('instagram.json')
+            .then(res => res.json())
+            .then(data => setInsta(data));
     }, [])
 
     return (
@@ -148,10 +156,23 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="section-6 my-5 py-5">
+            <div className="section-6 my-3 py-5">
                 <p>Testimonial</p>
                 <h1>What Our Clints Says</h1>
                 <Reviews></Reviews>
+            </div>
+
+            <div className="container-fluid section-8 mb-5">
+                <p>Follow Us Now</p>
+                <h1>Follow on Instagram</h1>
+                <Row xs={1} md={4}>
+                    {
+                        insta.map(pic => <InstaPic
+                            key={pic.id}
+                            pic={pic}
+                        ></InstaPic>)
+                    }
+                </Row>
             </div>
 
         </div>
