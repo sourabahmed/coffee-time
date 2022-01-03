@@ -145,14 +145,14 @@ const MainHome = () => {
                 <p>Our Special Menu</p>
                 <h1>Photo Gallery</h1>
                 <div className="gallery-container container-fluid">
-                    <Row xs={1} md={3}>
+                    <div className="gallery-grid">
                         {
                             photos.map(gallery => <Gallery
                                 key={gallery.id}
                                 gallery={gallery}
                             ></Gallery>)
                         }
-                    </Row>
+                    </div>
                 </div>
             </div>
 

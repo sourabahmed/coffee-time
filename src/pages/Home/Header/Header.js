@@ -15,7 +15,7 @@ const Header = () => {
                 {/* 1st logo part  */}
                 <div className="logo">
                     <h2>
-                        <span>C</span>offee <span>T</span>ime
+                        <span>C</span>offee<span>T</span>ime
                     </h2>
                 </div>
 

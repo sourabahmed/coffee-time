@@ -149,6 +149,12 @@
     background-image: url(../../../images/gallery-banner2.png);
     background-repeat: no-repeat;
     background-position: right;
+    
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 @media only screen and (max-width:770px){
@@ -165,9 +171,13 @@
         font-size: 3em;
     }
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:668px){
     .section-4 h1{
         font-size: 1.4em;
+    }
+    .gallery-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
     }
 }
 @media only screen and (max-width:1020px){
