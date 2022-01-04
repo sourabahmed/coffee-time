@@ -23,7 +23,7 @@ const MakeAdmin = () => {
         <div>
           <div className='delivery py-2'>
           <div className=" container mx-auto "> 
-          <h2 className="font-bold fs-1 my-5 underline text-light"> <span className='text-decoration-underline'>Delivery Product</span>  Information</h2>
+          <h2 className="font-bold fs-1 my-5 underline text-light"> <span className='text-decoration-underline'>Make an</span>  Admin</h2>
           <form className="ps-auto ms-auto fs-3 delivery-info  text-center mb-5" onSubmit={handleSubmit(onSubmit)}>
               
               <input className="w-50 text-center rounded-pill" type="email" placeholder="Eamil" {...register("email")} required/>

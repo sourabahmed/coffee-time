@@ -27,6 +27,7 @@ const DashboardNav = () => {
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Nav.Link ><Link className='text-dark fs-3' to="payment">Payment</Link></Nav.Link>
                                 <Nav.Link ><Link className='text-dark fs-3' to="myorders">My Orders</Link></Nav.Link>
+                                <Nav.Link ><Link className='text-dark fs-3' to="addreview">Add Review</Link></Nav.Link>
                                 {
                                     admin && <Nav.Link ><Link className='text-dark fs-3' to="manageorders">Manage Orders</Link></Nav.Link>
                                 }
