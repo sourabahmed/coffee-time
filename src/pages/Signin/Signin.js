@@ -3,11 +3,11 @@ import './Signin.css';
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Header from '../Home/Header/Header';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 
 
 const Signin = () => {
-    const {registerUser} = useFirebase();
+    const {registerUser} = useAuth();
 
     const location = useLocation();
     const navigate = useNavigate();

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
+
 
 const PrivateRoute = ({ children }) => {
-    const { user, isLoading } = useFirebase();
+    const { user, isLoading } = useAuth();
 
     if (isLoading) {
         return (

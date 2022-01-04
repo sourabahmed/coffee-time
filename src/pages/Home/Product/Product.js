@@ -16,7 +16,7 @@ const Product = ({item}) => {
               </div>
               <div className="product-price d-flex justify-content-between align-items-center">
                 <h2>${price}</h2>
-                <button className="btn btn-danger"><Link to={`/deliveryinfo/${_id}`}>Order Now</Link></button>
+                <button className="btn btn-danger fs-3"><Link className='text-light' to={`/deliveryinfo/${_id}`}>Order Now</Link></button>
               </div>
           </div>
         </div>
