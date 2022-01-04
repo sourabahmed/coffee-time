@@ -12,6 +12,7 @@ import Login from './pages/Login/Login';
 import Signin from './pages/Signin/Signin';
 import About from './pages/Home/About/About';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
+import Deliveryinfo from './pages/Home/DeliveryInfo/DeliveryInfo';
 
 function App() {
   return (
@@ -27,10 +28,10 @@ function App() {
           {/* <Route path="about" element={<About />} /> */}
 
           <Route
-              path="about"
+              path="deliveryinfo/:deliveryId"
               element={
                 <PrivateRoute>
-                  <About />
+                  <Deliveryinfo />
                 </PrivateRoute>
               }
           />

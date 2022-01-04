@@ -12,11 +12,11 @@ const Product = ({item}) => {
               </div>
               <div className="product-name text-left">
                 <h2>{name}</h2>
-                <p>{description.slice(0, 100)}</p>
+                <p>{description.slice(0, 110)}</p>
               </div>
               <div className="product-price d-flex justify-content-between align-items-center">
                 <h2>${price}</h2>
-                <button className="btn btn-danger">Order Now</button>
+                <button className="btn btn-danger"><Link to={`/deliveryinfo/${_id}`}>Order Now</Link></button>
               </div>
           </div>
         </div>
