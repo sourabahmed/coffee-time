@@ -5,7 +5,7 @@ import './Products.css';
 const Products = () => {
     const [items, setItems] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://radiant-ocean-23538.herokuapp.com/products')
             .then(rse => rse.json())
             .then(data => setItems(data));
     }, [])

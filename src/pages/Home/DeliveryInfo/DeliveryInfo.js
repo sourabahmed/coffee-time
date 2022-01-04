@@ -11,14 +11,14 @@ const DeliveryInfo = () => {
   const {deliveryId} = useParams();
   
     useEffect(() => {
-        fetch(`http://localhost:5000/singleproduct/${deliveryId}`)
+        fetch(`https://radiant-ocean-23538.herokuapp.com/singleproduct/${deliveryId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [])
     console.log(product);
     const { register, handleSubmit,  formState: { errors } } = useForm();
     const onSubmit = data => {
-      fetch('http://localhost:5000/orders', {
+      fetch('https://radiant-ocean-23538.herokuapp.com/orders', {
         method: 'POST',
         headers:{
             'Content-Type': 'application/json'
