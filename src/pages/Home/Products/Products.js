@@ -10,7 +10,7 @@ const Products = () => {
             .then(data => setItems(data));
     }, [])
     return (
-        <div className='products-section'>
+        <div id="products" className='products-section'>
             <div className=" p-5 d-flex justify-content-between ">
                 <div>
                     <h5>Special Online Shop</h5>

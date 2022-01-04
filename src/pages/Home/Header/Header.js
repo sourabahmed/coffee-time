@@ -22,7 +22,7 @@ const Header = () => {
                         </Nav>
                         <Nav>
                             <Nav.Link href="#deets">Dashboard</Nav.Link>
-                            <Nav.Link href="#deets">{user.displayName}</Nav.Link>
+                            <Nav.Link className="text-danger">{user.displayName}</Nav.Link>
                             <Nav.Link eventKey={2} href="#memes">
                                 {
                                     user.email?<Button className="fs-3" onClick={logOut} variant="outline-danger">LogOut</Button> :<Link to="/login"><Button className="fs-3" variant="outline-danger">Login</Button></Link>

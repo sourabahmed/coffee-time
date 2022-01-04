@@ -55,7 +55,7 @@ const MainHome = () => {
                     <h1 className="mx-5 special2">Would you like a Cup of Delicious Coffee?</h1>
                     <h2 className="mt-4 mx-5">Coffee Time - Relaxation in every sip! Get the nostalgia back!! Your companion of every moment!!! Enjoy the beautiful moments and make them memorable.</h2>
                     <br /><br />
-                    <button className="mx-5 px-5 btn home-banner-btn">Learn More</button>
+                    <button className="mx-5 px-5 btn home-banner-btn"><a href="#products">Products</a></button>
                 </div>
             </div>
 
