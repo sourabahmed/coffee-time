@@ -21,7 +21,7 @@ const Header = () => {
                             <Nav.Link href="#pricing">Pricing</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">Dashboard</Nav.Link>
+                            <Nav.Link ><Link to="/dashboard">Dashboard</Link></Nav.Link>
                             <Nav.Link className="text-danger">{user.displayName}</Nav.Link>
                             <Nav.Link eventKey={2} href="#memes">
                                 {
