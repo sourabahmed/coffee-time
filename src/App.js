@@ -16,6 +16,7 @@ import AuthProvider from './context/AuthContext';
 import Payment from './pages/Dashboard/Payment/Payment';
 import Dashboard from './pages/Dashboard/Dashboard/Dashboard';
 import MyOrders from './pages/Dashboard/MyOrders/MyOrders';
+import ManageOrders from './pages/Dashboard/ManageOrders/ManageOrders';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             <Route path="dashboard" element={<Dashboard />}>
               <Route path="payment" element={<Payment />} />
               <Route path="myorders" element={<MyOrders />} />
+              <Route path="manageorders" element={<ManageOrders />} />
             </Route>
 
           </Routes>
