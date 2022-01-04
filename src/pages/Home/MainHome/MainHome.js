@@ -59,7 +59,7 @@ const MainHome = () => {
                 </div>
             </div>
 
-            <div className="section-2 box p-5">
+            <div id="about" className="section-2 box p-5">
                 <div className="py-3 container">
                     <div className="row">
                         <div className="col-12 col-sm-6 col-md-3">
@@ -142,7 +142,7 @@ const MainHome = () => {
                 </div>
             </div>
 
-            <div className="section-5">
+            <div id="gallery" className="section-5">
                 <p>Our Special Menu</p>
                 <h1>Photo Gallery</h1>
                 <div className="gallery-container container-fluid">
@@ -162,7 +162,9 @@ const MainHome = () => {
                 <h1>What Our Clints Says</h1>
                 <Reviews></Reviews>
             </div>
-              <Products></Products>
+            <div id="products">
+                <Products></Products>
+            </div>
             <div className="container-fluid section-8 mb-5">
                 <p>Follow Us Now</p>
                 <h1>Follow on Instagram</h1>

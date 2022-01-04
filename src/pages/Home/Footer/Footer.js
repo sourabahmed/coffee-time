@@ -21,7 +21,7 @@ const Footer = () => {
         e.target.reset()
     };
     return (
-        <div>
+        <div id="contact">
             <div className="footer d-flex flex-column align-items-center pt-5" style={{ backgroundColor: "#eceae3" }}>
                 <div className="container">
                     <div className="row py-5">
