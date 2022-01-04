@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import useAuth from '../../../hooks/useAuth';
+
 
 const ManageOrders = () => {
-    const { user } = useAuth();
     const [orders, setOrders] = useState([]);
     const [isDeleted, setIsDeleted] = useState(false);
 

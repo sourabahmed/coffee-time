@@ -30,6 +30,9 @@ const DashboardNav = () => {
                                 {
                                     admin && <Nav.Link ><Link className='text-dark fs-3' to="manageorders">Manage Orders</Link></Nav.Link>
                                 }
+                                {
+                                    admin && <Nav.Link ><Link className='text-dark fs-3' to="makeadmin">Make Admin</Link></Nav.Link>
+                                }
                                 
                             </Nav>
                                 
